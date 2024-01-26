@@ -30,6 +30,12 @@ final class ViewController: UIViewController {
         redLightView.alpha = statusOff
         yellowLightView.alpha = statusOff
         greenLightView.alpha = statusOff
+        
+        redLightView.layer.cornerRadius = redLightView.bounds.height / 2
+        yellowLightView.layer.cornerRadius = yellowLightView.bounds.height / 2
+        greenLightView.layer.cornerRadius = greenLightView.bounds.height / 2
+        
+        lightButton.layer.cornerRadius = 10
     }
     
     @IBAction func lightButtonDidTapped() {
